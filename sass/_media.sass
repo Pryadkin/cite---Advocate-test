@@ -1,0 +1,366 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  body .site-header .top-line,
+  body .site-header .top-caption
+    padding:
+      left: 20px
+      right: 20px
+
+  body .site-header .top-menu
+    padding:
+      left: 5px
+      right: 5px
+
+  body .white-popup
+    width: 500px
+    form
+      .h2
+        font-size: 22px
+      input.tele
+        width: 260px
+
+
+  body .s-practice .cont .practice-item
+    .it
+      flex-direction: row
+    .h2
+      padding: 0 20px 0 20px
+  body .s-practice .grid
+      grid-template-columns: 1fr
+      grid-gap: 20px
+      .practice-item
+        .it
+          grid-template-columns: 0.25fr	0.5fr 1fr
+          grid-template-rows: none
+          align-items: center
+          grid-gap: 20px
+          .h2
+            text-align: left
+
+  body .s-about_us,
+  body .s-court,
+  body .s-info,
+  body .s-contacts
+    .row
+      .p-gold
+        text-align: center
+        font-size: 25px
+      p
+        padding:
+          left: 0
+          right: 0
+
+  .s-court .row .owl-carousel
+    .owl-nav
+      .owl-prev
+        left: 15px
+        top: 43%
+      .owl-next
+        right: 15px
+        top: 43%
+
+  .top
+    bottom: 80px
+
+// ≥992px
++media-breakpoint-down(md)
+  body .site-header .toggle-mnu,
+  body .footer .toggle-mnu
+    display: block
+
+  .line-h1
+    padding: 50px 0 30px
+    .h1
+      font-size: 30px
+  p
+    font-size: 16px
+    padding:
+      left: 0px
+      right: 0px
+
+  body .s-about_us
+    .bg
+      background-image: contain
+    .row p
+      padding: 10px 0
+
+  body
+    .site-header
+      .top-caption
+        .row
+          .logo
+            font-size: 80px
+          span
+            font-size: 38px
+  button
+    font-size: 25px
+    padding: 12px 45px
+
+  .top-menu,
+  .footer
+    display: none
+
+  body .s-about_us,
+  body .s-court,
+  body .s-info,
+  body .s-contacts
+    .row
+      margin:
+        left: 20px
+        right: 20px
+      .p-gold
+        text-align: center
+        font-size: 20px
+
+  .s-statistics .row .statistics-item
+    .number
+      font-size: 50px
+    .h2
+      font-size: 25px
+
+  .s-contacts .row .contact-flex-cont
+    margin-bottom: 5px
+
+  .s-contacts .input-flex-container
+    margin:
+      top: 10px
+      bottom: 5px
+    flex-direction: column
+    .input-flex
+      margin-bottom: 20px
+
+  body .s-practice
+    .grid
+      grid-gap: 20px
+      .practice-item
+        .it
+          grid-gap: 20px
+          img
+            width: 80px
+          .h2
+            font-size: 21px
+
+  .s-court .row .owl-carousel
+    .owl-nav
+      .owl-prev
+        left: 15px
+        top: 43%
+      .owl-next
+        right: 15px
+        top: 43%
+
+
+  .top
+    bottom: 20px
+
+
+// ≥768px
++media-breakpoint-down(sm)
+  body .white-popup
+    width: 350px
+    height: 360px
+    form
+      .h2
+        font-size: 20px
+        padding: 10px
+      input.tele
+        width: 240px
+        margin:
+          top: 5px
+
+  .line-h1
+    padding: 30px 0 30px
+    .h1
+      font-size: 24px
+  .h2
+    font-size: 20px
+
+  body .s-practice
+    .cont.grid
+      margin:
+        left: 10px
+        right: 10px
+      .practice-item
+        .it
+          grid-template-columns: 0.25fr	170px 1fr
+          img
+            width: 80px
+          .h2
+            font-size: 20px
+
+  body .s-statistics .row
+    justify-content: center
+
+  body
+    .site-header
+      background-position: left
+      .top-line
+        .row
+          .logo
+            display: none
+      .top-caption
+        .row
+          .logo
+            font-size: 60px
+          span
+            font-size: 30px
+
+  .s-statistics .row
+    .statistics-item
+      margin-bottom: 20px
+      .number
+        font-size: 35px
+
+  body .s-practice .cont
+      flex-direction: column
+      margin:
+        left: 5px
+        right: 5px
+      .practice-item
+        .h2
+          flex-grow: 1
+          flex-basis: 50%
+
+
+  .contact-item div
+    font-size: 20px
+
+  button
+    font-size: 20px
+    padding: 10px 40px
+
+  .s-court .row .owl-carousel
+    .owl-nav
+      .owl-prev
+        left: -2.5%
+        top: 43%
+      .owl-next
+        right: -2.5%
+        top: 43%
+
+
+// ≥576px
++media-breakpoint-down(xs)
+  body .site-header
+    .top-line
+      padding: 0
+      .row
+        justify-content: space-between
+        font-size: 18px
+        .phone
+          flex-basis: 48%
+          font-size: 16px
+          img
+            margin:
+              top: 2px
+              right: 6px
+        .watch
+          padding-left: 13px
+          flex-basis: 45%
+          font-size: 16px
+          img
+            margin:
+              top: 3px
+
+  body .site-header .top-caption .row
+    text-align: center
+    .logo
+      line-height: 60px
+      margin-bottom: 15px
+
+  body .site-header .top-caption .row
+    align-items: center
+
+  body .site-header .toggle-mnu
+    margin-right: 0px
+    margin-top: 0
+    width: 30px
+    height: 18px
+    display: block
+    margin: auto
+
+
+  body .white-popup
+    width: 290px
+    height: 360px
+    form
+      .h2
+        font-size: 20px
+        padding: 10px
+      input.tele
+        width: 240px
+        margin:
+          top: 5px
+
+  .line-h1
+    padding: 15px 0 20px
+    .h1
+      font-size: 20px
+    &::before, &::after
+      width: 80px
+      margin: 0 30%
+
+  body .s-about_us .line-h1
+    .h1
+    &::before, &::after
+      margin: 0 30%
+
+  body .s-practice
+    .cont.grid
+      grid-gap: 30px
+      grid-template-columns: 1fr
+      margin:
+        left: 5px
+        right: 5px
+      .practice-item.subitems
+        .it
+          grid-template-columns: 120px 170px
+          img
+            display: none
+          .h2
+            font-size: 16px
+            padding: 5px
+          p
+            font-size: 14px
+
+  .s-court .row .owl-carousel div div
+    .carousel-flex
+      display: block
+      img
+        float: left
+      p
+        float: center
+
+  .s-court .row .owl-carousel
+    .owl-nav
+      .owl-prev
+        left: -4%
+        top: 46%
+      .owl-next
+        right: -4%
+        top: 46%
+
+
+  .s-contacts .row .contact-flex-cont
+    flex-direction: column
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

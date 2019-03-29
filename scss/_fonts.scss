@@ -1,0 +1,10 @@
+@import "_mixins/font-face";
+
+@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("Lora-Bold", "../fonts/Lora-Bold/Lora-Bold");
+@include font-face("Lora-BoldItalic", "../fonts/Lora-BoldItalic/Lora-BoldItalic");
+@include font-face("Lora-Italic", "../fonts/Lora-Italic/Lora-Italic");
+@include font-face("Lora-Regular", "../fonts/Lora-Regular/Lora-Regular");
+@include font-face("Lora-Bold", "../fonts/Lora-Bold/Lora-Bold");
+@include font-face("Raleway-Regular", "../fonts/Raleway-Regular/Raleway-Regular");
